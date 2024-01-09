@@ -1,10 +1,11 @@
 '''to create .exe:
 python -m PyInstaller skinSwap.py
-two folders will be generated. You can delete "build", and in the other folder place "_internal" and the executable in the root folder of the mod, then you
-can delete "dist". The .spec file should also be removed.'''
+delete dist after placing "_internal" and the executable in root
+delete build
+delete .spec'''
 import shutil
 
-foo = ['name', 'description (this one is just an example)', "default", "default tunic and pants", "onesie", "a snug purple onesie", "jester", "The Jester", "legendOfZelda", "Link from Legend of Zelda", "goth", "goth", "bootyShortsCalifornia", "red shirt, blonde hair, booty shorts.", "bootyShortsMiami", "pink shirt, black... uh, hair AND skin, booty shorts", "theOriginal", "the original color palette from the very first iteration", "McDonald", "McDonald's Uniform, sorta", "country", "country bumpkin", "santa", "Christmas colors", "hotLeather", "hot leather", "tieAndSlacks", "tie and slacks"]
+foo = ['name', 'description (this one is just an example)', "default", "default tunic and pants", "onesie", "a snug purple onesie", "jester", "The Jester", "legendOfZelda", "Link from Legend of Zelda", "goth", "goth", "bootyShortsCalifornia", "red shirt, blonde hair, booty shorts.", "bootyShortsMiami", "pink shirt, black... uh, hair AND skin, booty shorts", "theOriginal", "the original color palette from the very first iteration", "McDonald", "McDonald's Uniform, sorta", "country", "country bumpkin", "santa", "Christmas colors", "hotLeather", "hot leather", "tieAndSlacks", "tie and slacks", "familyGuy", "Peter Griffin from Fortnite"]
 names = foo[::2]
 dispNames = foo[::2]
 descs = foo[1::2]
